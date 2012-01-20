@@ -6,10 +6,13 @@
 GET     /                                       Application.index
 
 # Post Detail
-Get		/posts/{id}								Application.show
+GET		/posts/{id}								Application.show
 
 # Submit Comment
-Post	/posts/{postId}/comments				Application.postComment
+POST	/posts/{postId}/comments				Application.postComment
+
+# Captcha
+GET		/captcha								Application.captcha
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
