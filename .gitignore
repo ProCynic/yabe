@@ -4,3 +4,4 @@ modules
 lib
 test-result
 logs
+*.png

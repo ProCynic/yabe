@@ -21,7 +21,20 @@ User(bob):
 User(jeff):
     email:          jeff@gmail.com
     password:       secret
-    fullname:       Jeff    
+    fullname:       Jeff
+
+User(geoff):
+    email:          Professional.Cynic@gmail.com
+    password:       password
+    fullname:       Geoffrey Parker
+
+
+Post(geoffPost):
+    title:          A Blog Post
+    postedAt:       2012-01-20
+    author:         geoff
+    content:        >
+                    This is a blog post that I wrote to show that this is working.
     
 Post(firstBobPost):
     title:          About the model layer
