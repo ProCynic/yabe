@@ -6,7 +6,7 @@
 GET     /                                       Application.index
 
 # Post Detail
-GET		/posts/{<[0-9]+>id}								Application.show
+GET		/posts/{<[0-9]+>id}						Application.show
 
 # Submit Comment
 POST	/posts/{postId}/comments				Application.postComment
@@ -19,6 +19,10 @@ GET		/posts/{tag}							Application.listTagged
 
 
 # Administration
+GET     /admin/myPosts/{id}                     Admin.form
+GET     /admin/new                              Admin.form
+POST    /admin/myPosts/{id}                     Admin.save
+POST    /admin/new                              Admin.save
 GET     /admin/?                                Admin.index
 *       /admin                                  module:crud
 
